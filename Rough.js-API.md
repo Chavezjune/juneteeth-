@@ -5,6 +5,7 @@ The canvas object has properties that can be used to configure the overall style
 ## RoughCanvas
 
 <a name="constructor" href="#constructor">#</a> <b>RoughCanvas</b>(<i>canvasElement</i>, <i>width</i>, <i>height</i>)
+
 Instantiate RoughCanvas by passing in the canvas node and the dimensions of the canvas. The constructor will resize the canvas element. 
 
 ```js
