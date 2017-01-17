@@ -9,7 +9,7 @@ The canvas object has properties that can be used to configure the overall style
 Instantiate RoughCanvas by passing in the canvas node and the dimensions of the canvas. The constructor will resize the canvas element. 
 
 ```js
-var roughCanvas = new RoughCanvas(document.getElementById('myCanvas'), 500, 500);
+var rc = new RoughCanvas(document.getElementById('myCanvas'), 500, 500);
 ```
 
 ### Properties
