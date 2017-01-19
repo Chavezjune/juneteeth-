@@ -35,6 +35,8 @@ String value representing the color of the drawn objects. Default value is black
 
 Numerical value to set the width of the strokes (in pixels). Default value is 1. 
 
+![Rough.js stroke sample](https://pshihn.github.io/rough/images/cap_rough.png)
+
 ```js
 rough.stroke = "#66AA88";
 rough.strokeWidth = 6;
