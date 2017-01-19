@@ -57,6 +57,10 @@ Default value is hachure.
 
 String value representing the color used to fill a shape. In hachure style fills, this represents the color of the hachure lines. 
 
+<a name="fillweight" href="#fillweight">#</a> rough.<b>fillWeight</b>
+
+Numeric value representing the width of the hachure lines. Default value of the fillWeight is set to half the <a href="#strokewidth">strokeWidth</a> of that shape.
+
 <a name="hachureangle" href="#hachureangle">#</a> rough.<b>hachureAngle</b>
 
 Numerical value that defines the angle of the hachure lines. Default value is -41 degrees. 
