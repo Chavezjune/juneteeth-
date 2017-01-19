@@ -63,7 +63,7 @@ Numerical value that defines the angle of the hachure lines. Default value is -4
 
 <a name="hachuregap" href="#hachuregap">#</a> rough.<b>hachureGap</b>
 
-Numerical value that defines the average gap, in pixels, between two hachure lines.  Default value of the hachureGap is set to four times the <a href="#strokewidth">strokeWidth</a>of that shape. 
+Numerical value that defines the average gap, in pixels, between two hachure lines.  Default value of the hachureGap is set to four times the <a href="#strokewidth">strokeWidth</a> of that shape. 
 
 
 
