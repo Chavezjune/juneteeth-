@@ -27,7 +27,7 @@ Default value is 1.
 
 This property can be overridden by setting the same property on any sketch object. 
 
-<a name="stroke" href="#bowing">#</a> rough.<b>stroke</b>
+<a name="stroke" href="#stroke">#</a> rough.<b>stroke</b>
 
 String value representing the color of the drawn objects. Default value is black (#000000).
 
@@ -43,6 +43,18 @@ var r2 = rough.rectangle(160, 20, 120, 120)
 r2.stroke = "red";
 r2.strokeWidth = 2;
 ```
+
+<a name="fillstyle" href="#fillstyle">#</a> rough.<b>fillStyle</b>
+
+Rough.js supports two styles of filling a shape: <b>hachure</b> and <b>solid</b>.
+Default value is hachure.
+
+
+
+<a name="fill" href="#fill">#</a> rough.<b>fill</b>
+
+String value representing the color to fill a shape. 
+
 
 
 ## API
