@@ -189,9 +189,7 @@ Drawable is the base class that represents any object that may appear on the can
 Drawable has properties to configure its style (stroke, fill, roughness). These properties override the properties of the same name defined in the <a href="roughCanvas">RoughCanvas</a>.
 
 <b>drawable</b>.<a href="#roughness">roughness</a>
-
 <b>drawable</b>.<a href="#bowing">bowing</a>
-
 <b>drawable</b>.<a href="#stroke">stroke</a>
 
 <b>drawable</b>.<a href="#strokewidth">strokeWidth</a>
