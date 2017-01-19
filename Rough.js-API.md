@@ -86,6 +86,84 @@ r4 = rough.rectangle(160, 160, 120, 120);
 r4.fillStyle = "solid";
 ```
 
+## Methods
+
+<a name="addMethod" href="#addMethod">#</a> rough.<b>add</b>(<i>drawable</i>)
+
+Add a <a href="#drawable">drawable</a> to the canvas. A drawable is anything that appears on the canvas - a line, a circle, an SVG path, etc.
+
+<a name="removeMethod" href="#removeMethod">#</a> rough.<b>remove</b>(<i>drawable</i>)
+
+Remove a <a href="#drawable">drawable</a> from the canvas. 
+
+<a name="clearMethod" href="#clearMethod">#</a> rough.<b>clear</b>()
+
+Clears the canvas. Removes all shapes, paths, lines, and curves. 
+
+<a name="lineMethod" href="#lineMethod">#</a> rough.<b>line</b>(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>)
+
+Draws a line from coordinates (x1, y1) to (x2, y2). 
+
+<i>Returns</i> a <a href="#line">Line</a>.
+
+<a name="linearPathMethod" href="#linearPathMethod">#</a> rough.<b>linearPath</b>(<i>points</i>)
+
+Draws lines connecting the points passed in. <i>points</i> is an array of (x, y) coordinates. Each coordinate is an array of two elements: [x, y]
+
+<i>Returns</i> a <a href="#linearPath">LinearPath</a>.
+
+```js
+rough.linearPath([[10, 0], [20, 20], [120, 320]]);
+```
+
+<a name="rectangleMethod" href="#rectangleMethod">#</a> rough.<b>rectangle</b>(<i>x1</i>, <i>y1</i>, <i>width</i>, <i>height</i>)
+
+Draws a rectangle with x, y as the top-left coordinates, with the specified width and height
+
+<i>Returns</i> a <a href="#rectangle">Rectangle</a>.
+
+<a name="polygonMethod" href="#polygonMethod">#</a> rough.<b>polygon</b>(<i>points</i>)
+
+Draws a polygon with the points passed in as vertices. <i>points</i> is an array of (x, y) coordinates. Each coordinate is an array of two elements: [x, y]
+
+<i>Returns</i> a <a href="#polygon">Polygon</a>.
+
+<a name="ellipseMethod" href="#ellipseMethod">#</a> rough.<b>ellipse</b>(<i>x</i>, <i>y</i>, <i>width</i>, <i>height</i>)
+
+Draws an ellipse with the center at x, y; and with the specified width and height.
+Note that width = rx * 2, and height = ry * 2. (rx, ry are horizontal and vertical radii).
+
+<i>Returns</i> an <a href="#ellipse">Ellipse</a>.
+
+<a name="circleMethod" href="#circleMethod">#</a> rough.<b>circle</b>(<i>x</i>, <i>y</i>, <i>radius</i>)
+
+Draws a circle with the center at x, y; and with the specified radius. 
+
+<i>Returns</i> an <a href="#circle">Circle</a>.
+
+
+<a name="arcMethod" href="#arcMethod">#</a> rough.<b>arc</b>(<i>x</i>, <i>y</i>, <i>width</i>, <i>height</i>, <i>start</i>, <i>stop</i>, <i>closed</i>)
+
+Draws an arc. An arc is described as a section of en ellipse. <i>x</i>, <i>y</i> represent the center of that ellipse. <i>width</i>, <i>height</i> are the dimensions of that ellipse. 
+
+<i>start</i>, <i>stop</i> are the start and stop angles for the arc. 
+
+<closed> is a boolean argument. If true, lines are drawn to connect the two end points of the arc to the center. 
+
+<i>Returns</i> an <a href="#arc">Arc</a>.
+
+![Rough.js arc](https://pshihn.github.io/rough/images/cap_arc.png)
+
+``` javascript
+// arc(centerX, centerY, radiusX, radiusY, startAngle, endAngle, closePath)
+var arc1 = rough.arc(200, 100, 200, 180, -Math.PI + (Math.PI / 3), -Math.PI / 2, true);
+arc1.fill = "red";
+rough.arc(200, 100, 200, 180, -Math.PI, -0.75 * Math.PI, true);
+var openArc = rough.arc(200, 100, 150, 130, -0.2 * Math.PI, 0.6 * Math.PI, false);
+openArc.strokeWidth = 10;
+```
+
+
 ## API
 
 this.roughness = 1;
