@@ -9,14 +9,54 @@ RoughCanvas has properties that can be used to configure the overall style (defa
 Instantiate RoughCanvas by passing in the canvas node and the dimensions of the canvas. The constructor will resize the canvas element. 
 
 ```js
-var rc = new RoughCanvas(document.getElementById('myCanvas'), 500, 500);
+var rough = new RoughCanvas(document.getElementById('myCanvas'), 500, 500);
 ```
 
 ### Properties
 
-<a name="max" href="#max">#</a> d3.<b>max</b>(<i>array</i>[, <i>accessor</i>]) [<>](https://github.com/d3/d3-array/blob/master/src/max.js "Source")
+<a name="roughness" href="#roughness">#</a> rough.<b>roughness</b>
 
-Returns the maximum value in the given *array* using natural order. If the array is empty, returns undefined. An optional *accessor* function may be specified, which is equivalent to calling *array.map(accessor)* before computing the maximum value.
+Numerical value indicating how rough the drawing is. A rectangle with the roughness of 0 would be a perfect rectangle. Default value is 1.
+
+This property can be overridden by setting the same property on any sketch object. 
+
+<a name="bowing" href="#bowing">#</a> rough.<b>bowing</b>
+
+Numerical value indicating how curvy the lines are when drawing a sketch. A value of 0 will cause straight lines. 
+Default value is 1. 
+
+This property can be overridden by setting the same property on any sketch object. 
+
+<a name="stroke" href="#bowing">#</a> rough.<b>stroke</b>
+
+String value representing the color of the drawn objects. Default value is black (#000000).
+
+<a name="strokewidth" href="#strokewidth">#</a> rough.<b>strokeWidth</b>
+
+Numerical value to set the width of the strokes (in pixels). Default value is 1. 
+
+```js
+rough.stroke = "#66AA88";
+rough.strokeWidth = 6;
+rough.rectangle(20, 20, 120, 120);
+var r2 = rough.rectangle(160, 20, 120, 120)
+r2.stroke = "red";
+r2.strokeWidth = 2;
+```
+
 
 ## API
 
+this.roughness = 1;
+    this.bowing = 1;
+
+    this.stroke = "#000";
+    this.strokeWidth = 1;
+
+    this.fill = null;
+    this.fillStyle = "hachure";
+    this.fillWeight = -1;
+    this.hachureAngle = -41;
+    this.hachureGap = -1;
+
+    this.maxRandomnessOffset = 2;
