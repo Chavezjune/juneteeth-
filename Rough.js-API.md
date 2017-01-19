@@ -155,12 +155,31 @@ Draws an arc. An arc is described as a section of en ellipse. <i>x</i>, <i>y</i>
 ![Rough.js arc](https://pshihn.github.io/rough/images/cap_arc.png)
 
 ``` javascript
-// arc(centerX, centerY, radiusX, radiusY, startAngle, endAngle, closePath)
 var arc1 = rough.arc(200, 100, 200, 180, -Math.PI + (Math.PI / 3), -Math.PI / 2, true);
 arc1.fill = "red";
 rough.arc(200, 100, 200, 180, -Math.PI, -0.75 * Math.PI, true);
 var openArc = rough.arc(200, 100, 150, 130, -0.2 * Math.PI, 0.6 * Math.PI, false);
 openArc.strokeWidth = 10;
+```
+
+<a name="curveMethod" href="#curveMethod">#</a> rough.<b>curve</b>(<i>points</i>)
+
+Draws a curve passing through the points passed in. <i>points</i> is an array of (x, y) coordinates. Each coordinate is an array of two elements: [x, y]
+
+<i>Returns</i> a <a href="#polygon">Curve</a>.
+
+<a name="pathMethod" href="#pathMethod">#</a> rough.<b>path</b>(<i>d</i>)
+
+Draws a path described using a [SVG path](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) data string. 
+
+<i>Returns</i> a <a href="#path">Path</a>.
+
+![Rough.js svg](https://pshihn.github.io/rough/images/cap_svg.png)
+
+``` javascript
+var path = rough.path("M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z");
+path.fill = "#424242";
+path.hachureAngle = 90;
 ```
 
 
