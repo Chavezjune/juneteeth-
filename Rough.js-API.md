@@ -49,9 +49,9 @@ r2.strokeWidth = 2;
 Rough.js supports two styles of filling a shape: <b>hachure</b> and <b>solid</b>.
 Default value is hachure.
 
-<b>hachure</b> draws parallel lines with the same roughness as defined by the <a href="#roughness">roughness</a> and the <a href="#bowing">bowing</a> properties of the shape or the canvas. It can be configured using the <a href="#fillweight">fillWeight</a>, <a href="#hachureangle">hachureAngle</a>, and <a href="#hachuregap">hachureGap</a> properties.
+<i>hachure</i> draws parallel lines with the same roughness as defined by the <a href="#roughness">roughness</a> and the <a href="#bowing">bowing</a> properties of the shape or the canvas. It can be configured using the <a href="#fillweight">fillWeight</a>, <a href="#hachureangle">hachureAngle</a>, and <a href="#hachuregap">hachureGap</a> properties.
 
-<b>solid</b> is more like a conventional fill.
+<i>solid</i> is more like a conventional fill.
 
 <a name="fill" href="#fill">#</a> rough.<b>fill</b>
 
