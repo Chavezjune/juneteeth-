@@ -70,6 +70,7 @@ Numerical value that defines the angle of the hachure lines. Default value is -4
 Numerical value that defines the average gap, in pixels, between two hachure lines.  Default value of the hachureGap is set to four times the <a href="#strokewidth">strokeWidth</a> of that shape. 
 
 ```js
+var rough = new RoughCanvas(myCanvas, 400, 400);
 rough.fill = "#FF6688";
 rough.rectangle(20, 20, 120, 120);
 var r2 = rough.rectangle(160, 20, 120, 120)
