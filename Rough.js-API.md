@@ -191,19 +191,12 @@ Drawable has properties to configure its style (stroke, fill, roughness). These 
 <b>drawable</b>.<a href="#roughness">roughness</a><br/>
 <b>drawable</b>.<a href="#bowing">bowing</a><br/>
 <b>drawable</b>.<a href="#stroke">stroke</a><br/>
-
-<b>drawable</b>.<a href="#strokewidth">strokeWidth</a>
-
-<b>drawable</b>.<a href="#fillstyle">fillStyle</a>
-
-<b>drawable</b>.<a href="#fill">fill></a>
-
-<b>drawable</b>.<a href="#fillweight">fillWeight</a>
-
-<b>drawable</b>.<a href="#hachureangle">hachureAngle</a>
-
-<b>drawable</b>.<a href="#hachuregap">hachureGap</a>
-
+<b>drawable</b>.<a href="#strokewidth">strokeWidth</a><br/>
+<b>drawable</b>.<a href="#fillstyle">fillStyle</a><br/>
+<b>drawable</b>.<a href="#fill">fill></a><br/>
+<b>drawable</b>.<a href="#fillweight">fillWeight</a><br/>
+<b>drawable</b>.<a href="#hachureangle">hachureAngle</a><br/>
+<b>drawable</b>.<a href="#hachuregap">hachureGap</a><br/>
 
 ## API
 
