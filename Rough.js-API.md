@@ -186,7 +186,7 @@ path.hachureAngle = 90;
 
 Drawable is the base class that represents any object that may appear on the canvas - lines, curves, shapes, paths. 
 
-Drawable has properties to configure its style (stroke, fill, roughness). These properties override the properties of the same name defined in the <a href="roughCanvas">RoughCanvas</a>.
+Drawable has properties to configure its style (stroke, fill, roughness). These properties override the properties of the same name defined in the <a href="#roughcanvas">RoughCanvas</a>.
 
 <b>drawable</b>.<a href="#roughness">roughness</a><br/>
 <b>drawable</b>.<a href="#bowing">bowing</a><br/>
