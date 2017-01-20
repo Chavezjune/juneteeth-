@@ -110,7 +110,7 @@ Draws a line from coordinates (x1, y1) to (x2, y2).
 
 Draws lines connecting the points passed in. <i>points</i> is an array of (x, y) coordinates. Each coordinate is an array of two elements: [x, y]
 
-<i>Returns</i> a <a href="#linearPath">LinearPath</a>.
+<i>Returns</i> a <a href="#linearpath">LinearPath</a>.
 
 ```js
 rough.linearPath([[10, 0], [20, 20], [120, 320]]);
