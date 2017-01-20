@@ -215,11 +215,12 @@ Object representing a set of connected lines. Inherits all properties from <a hr
 
 ### Methods
 
-linearPath.<b>getPoint</b>(<i>index</i>)
-
-Get the point at the specified <i>index</i>.
-
+- linearPath.<b>getPoint</b>(<i>index</i>)<br/>
+Get the point at the specified <i>index</i>.<br/>
 <i>Returns</i> a an array representing coordinates [x, y].
+
+- linearPath.<b>setPoint</b>(<i>index</i>, <i>x</i>, <i>y</i>)<br/>
+Updates the coordinates of the point and the specified index.
 
 
 ## API
