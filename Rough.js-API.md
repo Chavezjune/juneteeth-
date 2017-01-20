@@ -206,10 +206,10 @@ Line inherits all properties from <a href="#drawable">drawable</a>. Other proper
 
 ### Properties
 
-- line.<b>x1</b><br/>x-coordinate for the start of the line.
-- line.<b>y1</b><br/>y-coordinate for the start of the line.
-- line.<b>x2</b><br/>x-coordinate for the end of the line.
-- line.<b>y2</b><br/>y-coordinate for the end of the line.
+- line.<b>x1</b><br/><i>(number)</i> x-coordinate for the start of the line.
+- line.<b>y1</b><br/><i>(number)</i> y-coordinate for the start of the line.
+- line.<b>x2</b><br/><i>(number)</i> x-coordinate for the end of the line.
+- line.<b>y2</b><br/><i>(number)</i> y-coordinate for the end of the line.
 
 # LinearPath
 
@@ -223,6 +223,17 @@ Get the point at the specified <i>index</i>.<br/>
 
 - linearPath.<b>setPoint</b>(<i>index</i>, <i>x</i>, <i>y</i>)<br/>
 Updates the coordinates of the point and the specified index.
+
+# Rectangle
+
+In addition to the properties below, Rectangle inherits all properties from <a href="#drawable">drawable</a>. 
+
+### Properties
+
+- rectangle.<b>x</b><br/><i>(number)</i> x-coordinate for the top-left corner of the rectangle.
+- rectangle.<b>y</b><br/><i>(number)</i> y-coordinate for the top-left corner of the rectangle.
+- rectangle.<b>width</b><br/><i>(number)</i> width of the rectangle.
+- rectangle.<b>height</b><br/><i>(number)</i> height of the rectangle.
 
 
 ## API
