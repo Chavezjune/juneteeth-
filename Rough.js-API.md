@@ -286,6 +286,20 @@ In addition to the properties below, Arc inherits all properties from <a href="#
 - arc.<b>closed</b><br/><i>(boolean)</i> Flag indicating if the arc should be connected to the center. Default value is <b>false</b>.
 - arc.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the arc. Default value is 9.
 
+# Curve
+
+Curve drawn by passing through a set of points. It inherits all properties from <a href="#drawable">drawable</a>
+
+### Methods
+
+- curve.<b>getPoint</b>(<i>index</i>)<br/>
+Get the coordinates of the point at the specified <i>index</i>.<br/>
+<i>Returns</i> an array representing coordinates [x, y].
+
+- curve.<b>setPoint</b>(<i>index</i>, <i>x</i>, <i>y</i>)<br/>
+Updates the coordinates of the point and the specified index.
+
+
 
 ## API
 
