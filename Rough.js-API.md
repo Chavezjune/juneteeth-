@@ -307,19 +307,3 @@ A Path is described using a [SVG path](https://developer.mozilla.org/en-US/docs/
 
 - path.<b>path</b><br/><i>(string)</i> instructions to draw the [SVG path](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths).
 - path.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the curves in the path. Default value is 9.
-
-## API
-
-this.roughness = 1;
-    this.bowing = 1;
-
-    this.stroke = "#000";
-    this.strokeWidth = 1;
-
-    this.fill = null;
-    this.fillStyle = "hachure";
-    this.fillWeight = -1;
-    this.hachureAngle = -41;
-    this.hachureGap = -1;
-
-    this.maxRandomnessOffset = 2;
