@@ -1,3 +1,4 @@
+# Rough.js API
 Fist step - instantiate the RoughCanvas object. This canvas object can  be used to create different shapes, lines, curves and paths. 
 
 RoughCanvas has properties that can be used to configure the overall style (default style) of all the objects drawn on it. For example, changing the fill-color or the stroke-width will change the fill-color and stroke-width of all the objects. Individual objects can override these properties. 
