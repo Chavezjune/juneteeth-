@@ -271,6 +271,21 @@ In addition to the properties below, Circle inherits all properties from <a href
 - circle.<b>width</b><br/><i>(number)</i> radius of the circle.
 - circle.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the circle. Default value is 9. 
 
+# Arc
+
+Arc is described as a section of an ellipse. A <b>closed</b> arc has lines drawn from the center of the ellipse to the ends of the arc. 
+
+In addition to the properties below, Arc inherits all properties from <a href="#drawable">drawable</a>. 
+
+### Properties
+
+- arc.<b>x</b><br/><i>(number)</i> x-coordinate for center of the ellipse used for the arc.
+- arc.<b>y</b><br/><i>(number)</i> y-coordinate for center of the ellipse used for the arc.
+- arc.<b>width</b><br/><i>(number)</i> width of the ellipse (2 * rx) used for the arc.
+- arc.<b>height</b><br/><i>(number)</i> height of the ellipse (2 * ry) used for the arc.
+- arc.<b>closed</b><br/><i>(boolean)</i> Flag indicating if the arc should be connected to the center. Default value is <b>false</b>.
+- arc.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the arc. Default value is 9.
+
 
 ## API
 
