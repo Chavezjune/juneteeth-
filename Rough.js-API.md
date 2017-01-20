@@ -204,21 +204,10 @@ Updating any property on a Drawable object updates the UI automatically in an ef
 
 Line inherits all properties from <a href="#drawable">drawable</a>. Other properties:
 
-line.<b>x1</b>
-
-x-coordinate for the start of the line.
-
-line.<b>y1</b>
-
-y-coordinate for the start of the line.
-
-line.<b>x2</b>
-
-x-coordinate for the end of the line.
-
-line.<b>y2</b>
-
-y-coordinate for the end of the line.
+- line.<b>x1</b><br/>x-coordinate for the start of the line.
+- line.<b>y1</b><br/>y-coordinate for the start of the line.
+- line.<b>x2</b><br/>x-coordinate for the end of the line.
+- line.<b>y2</b><br/>y-coordinate for the end of the line.
 
 # LinearPath
 
