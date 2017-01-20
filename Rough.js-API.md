@@ -237,7 +237,7 @@ In addition to the properties below, Rectangle inherits all properties from <a h
 
 # Polygon
 
-Polygon inherits all properties from <a href="#drawable">drawable</a>
+Polygon inherits all properties from <a href="#drawable">drawable</a>.
 
 ### Methods
 
@@ -288,7 +288,7 @@ In addition to the properties below, Arc inherits all properties from <a href="#
 
 # Curve
 
-Curve drawn by passing through a set of points. It inherits all properties from <a href="#drawable">drawable</a>
+Curve drawn by passing through a set of points. It inherits all properties from <a href="#drawable">drawable</a>.
 
 ### Methods
 
@@ -299,7 +299,14 @@ Get the coordinates of the point at the specified <i>index</i>.<br/>
 - curve.<b>setPoint</b>(<i>index</i>, <i>x</i>, <i>y</i>)<br/>
 Updates the coordinates of the point and the specified index.
 
+# Path
 
+A Path is described using a [SVG path](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) data string. It inherits all properties from <a href="#drawable">drawable</a>. 
+
+### Properties
+
+- path.<b>path</b><br/><i>(string)</i> instructions to draw the [SVG path](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths).
+- path.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the curves in the path. Default value is 9.
 
 ## API
 
