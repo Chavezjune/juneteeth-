@@ -166,7 +166,7 @@ openArc.strokeWidth = 10;
 
 Draws a curve passing through the points passed in. <i>points</i> is an array of (x, y) coordinates. Each coordinate is an array of two elements: [x, y]
 
-<i>Returns</i> a <a href="#polygon">Curve</a>.
+<i>Returns</i> a <a href="#curve">Curve</a>.
 
 <a name="pathMethod" href="#pathMethod">#</a> rough.<b>path</b>(<i>d</i>)
 
