@@ -219,7 +219,7 @@ Object representing a set of connected lines. Inherits all properties from <a hr
 
 - linearPath.<b>getPoint</b>(<i>index</i>)<br/>
 Get the point at the specified <i>index</i>.<br/>
-<i>Returns</i> a an array representing coordinates [x, y].
+<i>Returns</i> an array representing coordinates [x, y].
 
 - linearPath.<b>setPoint</b>(<i>index</i>, <i>x</i>, <i>y</i>)<br/>
 Updates the coordinates of the point and the specified index.
@@ -234,6 +234,42 @@ In addition to the properties below, Rectangle inherits all properties from <a h
 - rectangle.<b>y</b><br/><i>(number)</i> y-coordinate for the top-left corner of the rectangle.
 - rectangle.<b>width</b><br/><i>(number)</i> width of the rectangle.
 - rectangle.<b>height</b><br/><i>(number)</i> height of the rectangle.
+
+# Polygon
+
+Polygon inherits all properties from <a href="#drawable">drawable</a>
+
+### Methods
+
+- polygon.<b>getPoint</b>(<i>index</i>)<br/>
+Get the coordinates of the vertex at the specified <i>index</i>.<br/>
+<i>Returns</i> an array representing coordinates [x, y].
+
+- polygon.<b>setPoint</b>(<i>index</i>, <i>x</i>, <i>y</i>)<br/>
+Updates the coordinates of the vertex and the specified index.
+
+# Ellipse
+
+In addition to the properties below, Ellipse inherits all properties from <a href="#drawable">drawable</a>. 
+
+### Properties
+
+- ellipse.<b>x</b><br/><i>(number)</i> x-coordinate for center of the ellipse.
+- ellipse.<b>y</b><br/><i>(number)</i> y-coordinate for center of the ellipse.
+- ellipse.<b>width</b><br/><i>(number)</i> width of the ellipse (2 * rx).
+- ellipse.<b>height</b><br/><i>(number)</i> height of the ellipse (2 * ry).
+- ellipse.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the ellipse. Default value is 9. 
+
+# Circle
+
+In addition to the properties below, Circle inherits all properties from <a href="#drawable">drawable</a>. 
+
+### Properties
+
+- circle.<b>x</b><br/><i>(number)</i> x-coordinate for center of the circle.
+- circle.<b>y</b><br/><i>(number)</i> y-coordinate for center of the circle.
+- circle.<b>width</b><br/><i>(number)</i> radius of the circle.
+- circle.<b>numSteps</b><br/><i>(number)</i> number of segments Rough.js approximates when drawing the circle. Default value is 9. 
 
 
 ## API
