@@ -188,15 +188,50 @@ Drawable is the base class that represents any object that may appear on the can
 
 Drawable has properties to configure its style (stroke, fill, roughness). These properties override the properties of the same name defined in the <a href="#roughcanvas">RoughCanvas</a>.
 
+Updating any property on a Drawable object updates the UI automatically in an efficient way. No redraw method needs to be called. 
+
 <b>drawable</b>.<a href="#roughness">roughness</a><br/>
 <b>drawable</b>.<a href="#bowing">bowing</a><br/>
 <b>drawable</b>.<a href="#stroke">stroke</a><br/>
 <b>drawable</b>.<a href="#strokewidth">strokeWidth</a><br/>
 <b>drawable</b>.<a href="#fillstyle">fillStyle</a><br/>
-<b>drawable</b>.<a href="#fill">fill></a><br/>
+<b>drawable</b>.<a href="#fill">fill</a><br/>
 <b>drawable</b>.<a href="#fillweight">fillWeight</a><br/>
 <b>drawable</b>.<a href="#hachureangle">hachureAngle</a><br/>
 <b>drawable</b>.<a href="#hachuregap">hachureGap</a><br/>
+
+# Line
+
+Line inherits all properties from <a href="#drawable">drawable</a>. Other properties:
+
+line.<b>x1</b>
+
+x-coordinate for the start of the line.
+
+line.<b>y1</b>
+
+y-coordinate for the start of the line.
+
+line.<b>x2</b>
+
+x-coordinate for the end of the line.
+
+line.<b>y2</b>
+
+y-coordinate for the end of the line.
+
+# LinearPath
+
+Object representing a set of connected lines. Inherits all properties from <a href="#drawable">drawable</a>.
+
+### Methods
+
+linearPath.<b>getPoint</b>(<i>index</i>)
+
+Get the point at the specified <i>index</i>.
+
+<i>Returns</i> a an array representing coordinates [x, y].
+
 
 ## API
 
