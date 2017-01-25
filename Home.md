@@ -38,7 +38,7 @@ String value representing the color of the drawn objects. Default value is black
 
 Numerical value to set the width of the strokes (in pixels). Default value is 1. 
 
-![Rough.js stroke sample](https://pshihn.github.io/rough/images/cap_rough.png)
+![Rough.js stroke sample](https://roughjs.com/images/cap_rough.png)
 
 ```js
 rough.stroke = "#66AA88";
@@ -74,7 +74,7 @@ Numerical value that defines the angle of the hachure lines. Default value is -4
 
 Numerical value that defines the average gap, in pixels, between two hachure lines.  Default value of the hachureGap is set to four times the <a href="#strokewidth">strokeWidth</a> of that shape. 
 
-![Rough.js fill sample](https://pshihn.github.io/rough/images/cap_fill2.png)
+![Rough.js fill sample](https://roughjs.com/images/cap_fill2.png)
 
 ```js
 var rough = new RoughCanvas(myCanvas, 400, 400);
@@ -155,7 +155,7 @@ Draws an arc. An arc is described as a section of en ellipse. <i>x</i>, <i>y</i>
 
 <i>Returns</i> an <a href="#arc">Arc</a>.
 
-![Rough.js arc](https://pshihn.github.io/rough/images/cap_arc.png)
+![Rough.js arc](https://roughjs.com/images/cap_arc.png)
 
 ``` javascript
 var arc1 = rough.arc(200, 100, 200, 180, -Math.PI + (Math.PI / 3), -Math.PI / 2, true);
@@ -177,7 +177,7 @@ Draws a path described using a [SVG path](https://developer.mozilla.org/en-US/do
 
 <i>Returns</i> a <a href="#path">Path</a>.
 
-![Rough.js svg](https://pshihn.github.io/rough/images/cap_svg.png)
+![Rough.js svg](https://roughjs.com/images/cap_svg.png)
 
 ``` javascript
 var path = rough.path("M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z");
