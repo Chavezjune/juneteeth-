@@ -12,11 +12,10 @@ Here are some examples of using Rough.js
 
   </tr>
 
-</table>
-<table>
-  <tr valign="top">
+<tr valign="top">
     <td width="25%">Spell out 'ROUGH'<br><a href="https://bl.ocks.org/pshihn/572bfc7f006edef4ca3b657a62b33bc0"
       <img width="133" src="http://bl.ocks.org/pshihn/raw/572bfc7f006edef4ca3b657a62b33bc0/thumbnail.png"></a>
     </td>
   </tr>
+
 </table>
