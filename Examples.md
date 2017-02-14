@@ -11,4 +11,9 @@ Here are some examples of using Rough.js
     <td width="25%">Sketchy Pie Chart<br><a href="http://bl.ocks.org/pshihn/eae2a2dc6a6b3dfe56bdfdf8e3a334c4"><img width="133" src="http://bl.ocks.org/pshihn/raw/eae2a2dc6a6b3dfe56bdfdf8e3a334c4/8de4d756b297869773771ff3696839c977e5bde7/thumbnail.png"></a></td>
 
   </tr>
+
+<tr valign="top">
+    <td width="25%">Sketchy Pie Chart<br><a href="https://bl.ocks.org/pshihn/572bfc7f006edef4ca3b657a62b33bc0"><img width="133" src="http://bl.ocks.org/pshihn/raw/572bfc7f006edef4ca3b657a62b33bc0/thumbnail.png"></a></td>
+
+  </tr>
 </table>
