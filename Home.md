@@ -197,3 +197,16 @@ Following is the map of Texas drawn without simplification and then with a simpl
 
 ![Rough.js rectangle](https://roughjs.com/images/main/m9.png) ![Rough.js rectangle](https://roughjs.com/images/main/m10.png)
 
+# Config
+When <a href="#roughcanvas">instantiating RoughCanvas</a>, you can, optionally, pass in a configuration object. 
+The object can have any of these properties:
+
+### options
+An <a href="#options">options</a> object that sets the default values for all shapes in the RoughCanvas instance.
+
+### noWorker
+If <a href="https://github.com/pshihn/workly" target="_blank">workly</a> has been loaded in the window, RoughJS will delegate most of the processing to a worker thread. If **noWorker** is set to *true*, it will not do that. 
+For more about using web workers, [read here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker).
+
+### worklyURL
+When using web workers as described [here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker), RoughJS will try to load the workly library from the CDN (https://cdn.jsdelivr.net/gh/pshihn/workly/dist/workly.min.js). If you want to provide a different source for workly, set the **worklyURL*** property to that url. 
