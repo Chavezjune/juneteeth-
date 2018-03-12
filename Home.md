@@ -209,4 +209,4 @@ If <a href="https://github.com/pshihn/workly" target="_blank">workly</a> has bee
 For more about using web workers, [read here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker).
 
 ### worklyURL
-When using web workers as described [here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker), RoughJS will try to load the workly library from the CDN (https://cdn.jsdelivr.net/gh/pshihn/workly/dist/workly.min.js). If you want to provide a different source for workly, set the **worklyURL*** property to that url. 
+When using web workers as described [here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker), RoughJS will try to load the workly library from the CDN (https://cdn.jsdelivr.net/gh/pshihn/workly/dist/workly.min.js). If you want to provide a different source for workly, set the **worklyURL** property to that url. 
