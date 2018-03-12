@@ -14,7 +14,7 @@ Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> m
 
 <a href="#config"><i>config</i></a> is optional. 
 
-```js
+```javascript
 let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 ```
 
@@ -24,28 +24,28 @@ For each method, <a href="#options"><i>options</i></a> is an optional argument -
 
 ### line (x1, y1, x2, y2 [, options])
 Draws a line from (x1, y1) to (x2, y2).
-```js
+```javascript
 roughCanvas.line(60, 60, 190, 60);
 roughCanvas.line(60, 60, 190, 60, {strokeWidth: 5});
 ```
 
 ### rectangle (x, y, width, height [, options])
 Draws a rectangle with the top-left corner at (x, y) with the specified width and height.
-```js
+```javascript
 roughCanvas.rectangle(10, 10, 100, 100);
 roughCanvas.rectangle(140, 10, 100, 100, { fill: 'red'});
 ```
 
 ### ellipse (x, y, width, height [, options])
 Draws an ellipse with the center at (x, y) and the specified width and height.
-```js
+```javascript
 roughCanvas.ellipse(350, 50, 150, 80);
 roughCanvas.ellipse(610, 50, 150, 80, {fill: 'blue', stroke: 'red'});
 ```
 
 ### circle (x, y, diameter [, options])
 Draws a circle with the center at (x, y) and the specified diameter.
-```js
+```javascript
 roughCanvas.circle(480, 50, 80);
 ```
 
@@ -54,7 +54,7 @@ Draws a set of lines connecting the specified points.
 
 <i>points</i> is an array of points. Each point is an array with 2 values - [x, y]
 
-```js
+```javascript
 roughCanvas.linearPath([[690, 10], [790, 20], [750, 120], [690, 100]]);
 ```
 
@@ -63,9 +63,31 @@ Draws a polygon with the specified vertices.
 
 <i>vertices</i> is an array of points. Each point is an array with 2 values - [x, y]
 
-```js
+```javascript
 roughCanvas.polygon([[690, 130], [790, 140], [750, 240], [690, 220]]);
 ```
+
+### arc (x, y, width, height, start, stop, closed [, options])
+Draws an arc. An arc is described as a section of en ellipse. <i>x</i>, <i>y</i> represent the center of that ellipse. <i>width</i>, <i>height</i> are the dimensions of that ellipse.
+
+<i>start</i>, <i>stop</i> are the start and stop angles for the arc. 
+
+<closed> is a boolean argument. If true, lines are drawn to connect the two end points of the arc to the center.
+
+![Rough.js arc](https://roughjs.com/images/main/m7.png)
+
+```javascript
+roughCanvas.arc(350, 300, 200, 180, Math.PI, Math.PI * 1.6, true);
+roughCanvas.arc(350, 300, 200, 180, 0, Math.PI / 2, true, {
+  stroke: 'red', strokeWidth: 4,
+  fill: 'rgba(255,255,0,0.4)', fillStyle: 'solid'
+});
+roughCanvas.arc(350, 300, 200, 180, Math.PI / 2, Math.PI, true, {
+  stroke: 'blue', strokeWidth: 2,
+  fill: 'rgba(255,0,255,0.4)'
+});
+```
+
 
 
 
