@@ -16,7 +16,7 @@ Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> m
 <a href="#config"><i>config</i> is optional. 
 
 ```js
-var rc = rough.canvas(document.getElementById('myCanvas'));
+let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 ```
 
 ## Methods
@@ -24,15 +24,9 @@ var rc = rough.canvas(document.getElementById('myCanvas'));
 For each method, <a href="#options"><i>options</i></a> are optional - they configure how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
 ### line
-```js
 <i>roughCanvas</i>.<b>line</b>(x1, y1, x2, y2, [options])
-```
 
-
-<a name="lineMethod" href="#lineMethod">#</a> roughCanvas.<b>line</b>(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, [<i>options</>])
-
-Draws a line from coordinates (x1, y1) to (x2, y2). 
-<a href="#options"><i>options</i> are optional and describe how to draw this shape. 
+Draws a line from (x1, y1) to (x2, y2)
 
 <a name="linearPathMethod" href="#linearPathMethod">#</a> rough.<b>linearPath</b>(<i>points</i>)
 
