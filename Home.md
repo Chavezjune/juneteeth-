@@ -126,3 +126,33 @@ For example, the **stroke** property defines the color used to draw the shape. I
 
 Following properties can be set in the options:
 
+### roughness
+Numerical value indicating how rough the drawing is. A rectangle with the roughness of 0 would be a perfect rectangle. Default value is 1. There is no upper limit to this value, but a value over 10 is mostly useless.
+
+![Rough.js rectangle](https://roughjs.com/images/main/m4.png)
+
+```js
+canvas.rectangle(15, 15, 80, 80, { roughness: 0.5, fill: 'red' });
+canvas.rectangle(120, 15, 80, 80, { roughness: 2.8, fill: 'blue' });
+canvas.rectangle(220, 15, 80, 80, { bowing: 6, stroke: 'green', strokeWidth: 3 });
+```
+
+### bowing
+Numerical value indicating how curvy the lines are when drawing a sketch. A value of 0 will cause straight lines. Default value is 1.
+
+### stroke
+String value representing the color of the drawn objects. Default value is black (#000000).
+
+### strokeWidth
+Numerical value to set the width of the strokes (in pixels). Default value is 1.
+
+### fill
+String value representing the color used to fill a shape. In hachure style fills, this represents the color of the hachure lines.
+
+### fillStyle
+Rough.js supports two styles of filling a shape: hachure and solid. Default value is hachure.
+
+**hachure** draws sketchy parallel lines with the same roughness as defined by the _roughness_ and the _bowing_ properties of the shape. It can be further configured using the fillWeight, hachureAngle, and hachureGap properties.
+
+**solid** is more like a conventional fill.
+
