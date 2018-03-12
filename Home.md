@@ -8,11 +8,11 @@ If you're looking for examples, [click here](https://github.com/pshihn/rough/wik
 
 This is the main interface when drawing on Canvas using RoughJS. 
 
-### rough.canvas (canvasElement, [, config])
 Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> method. 
 
 <a href="#config"><i>config</i></a> is optional. 
 
+### rough.canvas (canvasElement, [, config])
 ```javascript
 let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 ```
