@@ -1,113 +1,38 @@
 # Rough.js API
-Fist step - instantiate the RoughCanvas object. This canvas object can  be used to create different shapes, lines, curves and paths. 
 
-RoughCanvas has properties that can be used to configure the overall style (default style) of all the objects drawn on it. For example, changing the fill-color or the stroke-width will change the fill-color and stroke-width of all the objects. Individual objects can override these properties. 
+This page describes all you can do with RoughJS. 
+Note, this documentations is for v2.0. 
 
-[Some examples](https://github.com/pshihn/rough/wiki/Examples).
+[If you're looking for examples, click here.](https://github.com/pshihn/rough/wiki/Examples).
 
 # RoughCanvas
 
-<a name="constructor" href="#constructor">#</a> <b>RoughCanvas</b>(<i>canvasElement</i>, <i>width</i>, <i>height</i>)
+This is the main interface when drawing on Canvas using RoughJS. 
 
-Instantiate RoughCanvas by passing in the canvas node and the dimensions of the canvas. The constructor will resize the canvas element. 
+<a name="constructor" href="#constructor">#</a> rough.<b>canvas</b>(<i>canvasElement</i>, [<i>config</i>])
 
-```js
-var rough = new RoughCanvas(document.getElementById('myCanvas'), 500, 500);
-```
+Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> method. 
 
-## Properties
-
-<a name="roughness" href="#roughness">#</a> rough.<b>roughness</b>
-
-Numerical value indicating how rough the drawing is. A rectangle with the roughness of 0 would be a perfect rectangle. Default value is 1.
-
-This property can be overridden by setting the same property on any sketch object. 
-
-<a name="bowing" href="#bowing">#</a> rough.<b>bowing</b>
-
-Numerical value indicating how curvy the lines are when drawing a sketch. A value of 0 will cause straight lines. 
-Default value is 1. 
-
-This property can be overridden by setting the same property on any sketch object. 
-
-<a name="stroke" href="#stroke">#</a> rough.<b>stroke</b>
-
-String value representing the color of the drawn objects. Default value is black (#000000).
-
-<a name="strokewidth" href="#strokewidth">#</a> rough.<b>strokeWidth</b>
-
-Numerical value to set the width of the strokes (in pixels). Default value is 1. 
-
-![Rough.js stroke sample](https://roughjs.com/images/cap_rough.png)
+<a href="#config"><i>config</i> is optional. 
 
 ```js
-rough.stroke = "#66AA88";
-rough.strokeWidth = 6;
-rough.rectangle(20, 20, 120, 120);
-var r2 = rough.rectangle(160, 20, 120, 120)
-r2.stroke = "red";
-r2.strokeWidth = 2;
-```
-
-<a name="fillstyle" href="#fillstyle">#</a> rough.<b>fillStyle</b>
-
-Rough.js supports two styles of filling a shape: <b>hachure</b> and <b>solid</b>.
-Default value is hachure.
-
-<i>hachure</i> draws parallel lines with the same roughness as defined by the <a href="#roughness">roughness</a> and the <a href="#bowing">bowing</a> properties of the shape or the canvas. It can be configured using the <a href="#fillweight">fillWeight</a>, <a href="#hachureangle">hachureAngle</a>, and <a href="#hachuregap">hachureGap</a> properties.
-
-<i>solid</i> is more like a conventional fill.
-
-<a name="fill" href="#fill">#</a> rough.<b>fill</b>
-
-String value representing the color used to fill a shape. In hachure style fills, this represents the color of the hachure lines. 
-
-<a name="fillweight" href="#fillweight">#</a> rough.<b>fillWeight</b>
-
-Numeric value representing the width of the hachure lines. Default value of the fillWeight is set to half the <a href="#strokewidth">strokeWidth</a> of that shape.
-
-<a name="hachureangle" href="#hachureangle">#</a> rough.<b>hachureAngle</b>
-
-Numerical value that defines the angle of the hachure lines. Default value is -41 degrees. 
-
-<a name="hachuregap" href="#hachuregap">#</a> rough.<b>hachureGap</b>
-
-Numerical value that defines the average gap, in pixels, between two hachure lines.  Default value of the hachureGap is set to four times the <a href="#strokewidth">strokeWidth</a> of that shape. 
-
-![Rough.js fill sample](https://roughjs.com/images/cap_fill2.png)
-
-```js
-var rough = new RoughCanvas(myCanvas, 400, 400);
-rough.fill = "#FF6688";
-rough.rectangle(20, 20, 120, 120);
-var r2 = rough.rectangle(160, 20, 120, 120)
-r2.fillWeight = 2;
-r2.hachureAngle = 60;
-r3 = rough.rectangle(20, 160, 120, 120);
-r3.hachureGap = 10;
-r4 = rough.rectangle(160, 160, 120, 120);
-r4.fillStyle = "solid";
+var rc = rough.canvas(document.getElementById('myCanvas'));
 ```
 
 ## Methods
 
-<a name="addMethod" href="#addMethod">#</a> rough.<b>add</b>(<i>drawable</i>)
+For each method, <a href="#options"><i>options</i></a> are optional - they configure how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
-Add a <a href="#drawable">drawable</a> to the canvas. A drawable is anything that appears on the canvas - a line, a circle, an SVG path, etc.
+### line
+```js
+<i>roughCanvas</i>.<b>line</b>(x1, y1, x2, y2, [options])
+```
 
-<a name="removeMethod" href="#removeMethod">#</a> rough.<b>remove</b>(<i>drawable</i>)
 
-Remove a <a href="#drawable">drawable</a> from the canvas. 
-
-<a name="clearMethod" href="#clearMethod">#</a> rough.<b>clear</b>()
-
-Clears the canvas. Removes all shapes, paths, lines, and curves. 
-
-<a name="lineMethod" href="#lineMethod">#</a> rough.<b>line</b>(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>)
+<a name="lineMethod" href="#lineMethod">#</a> roughCanvas.<b>line</b>(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, [<i>options</>])
 
 Draws a line from coordinates (x1, y1) to (x2, y2). 
-
-<i>Returns</i> a <a href="#line">Line</a>.
+<a href="#options"><i>options</i> are optional and describe how to draw this shape. 
 
 <a name="linearPathMethod" href="#linearPathMethod">#</a> rough.<b>linearPath</b>(<i>points</i>)
 
