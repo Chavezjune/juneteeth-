@@ -193,3 +193,7 @@ When drawing paths using SVG path instructions, **simplification** can be set to
 
 For example, a path with 100 points and a **simplification** value of 0.5 will estimate the shape to about 50 points. This will give more complex shapes a sketchy feel. 
 
+Following is the map of Texas drawn without simplification and then with a simplification of 0.1
+
+![Rough.js rectangle](https://roughjs.com/images/main/m9.png) ![Rough.js rectangle](https://roughjs.com/images/main/m10.png)
+
