@@ -1,9 +1,8 @@
 # Rough.js API
 
-This page describes all you can do with RoughJS. 
-Note, this documentations is for v2.0. 
+This page describes all you can do with RoughJS.
 
-[If you're looking for examples, click here.](https://github.com/pshihn/rough/wiki/Examples).
+If you're looking for examples, [click here](https://github.com/pshihn/rough/wiki/Examples).
 
 # RoughCanvas
 
@@ -13,7 +12,7 @@ This is the main interface when drawing on Canvas using RoughJS.
 
 Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> method. 
 
-<a href="#config"><i>config</i> is optional. 
+<a href="#config"><i>config</i></a> is optional. 
 
 ```js
 let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
@@ -21,12 +20,54 @@ let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 
 ## Methods
 
-For each method, <a href="#options"><i>options</i></a> are optional - they configure how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
+For each method, <a href="#options"><i>options</i></a> is an optional argument - it configures how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
 ### line()
 <a name="line" href="#line">#</a>roughCanvas.<b>line</b>(x1, y1, x2, y2 [, options])
 
-Draws a line from (x1, y1) to (x2, y2)
+Draws a line from (x1, y1) to (x2, y2).
+
+### rectangle()
+<a name="rectangle" href="#rectangle">#</a>roughCanvas.<b>rectangle</b>(x, y, width, height [, options])
+
+Draws a rectangle with the top-left corner at (x, y) with the specified width and height.
+
+### ellipse()
+<a name="ellipse" href="#ellipse">#</a>roughCanvas.<b>ellipse</b>(x, y, width, height [, options])
+
+Draws an ellipse with the center at (x, y) and the specified width and height.
+
+### circle()
+<a name="circle" href="#circle">#</a>roughCanvas.<b>circle</b>(x, y, diameter [, options])
+
+Draws a circle with the center at (x, y) and the specified diameter.
+
+### linearPath()
+<a name="linearPath" href="#linearPath">#</a>roughCanvas.<b>linearPath</b>(points [, options])
+
+Draws a set of lines connecting the specified points. 
+
+<i>points</i> is an array of points. Each point is an array with 2 values - [x, y]
+
+```js
+roughCanvas.linearPath([[690, 10], [790, 20], [750, 120], [690, 100]]);
+```
+
+### polygon()
+<a name="polygon" href="#polygon">#</a>roughCanvas.<b>polygon</b>(vertices [, options])
+
+Draws a polygon with the specified vertices.
+
+<i>vertices</i> is an array of points. Each point is an array with 2 values - [x, y]
+
+```js
+roughCanvas.polygon([[690, 130], [790, 140], [750, 240], [690, 220]]);
+```
+
+
+
+
+
 
 <a name="linearPathMethod" href="#linearPathMethod">#</a> rough.<b>linearPath</b>(<i>points</i>)
 
