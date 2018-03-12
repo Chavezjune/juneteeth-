@@ -22,10 +22,11 @@ let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 
 For each method, <a href="#options"><i>options</i></a> is an optional argument - it configures how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
-### line(x1, y1, x2, y2 [, options])
+### line (x1, y1, x2, y2 [, options])
 Draws a line from (x1, y1) to (x2, y2).
 ```js
 roughCanvas.line(60, 60, 190, 60);
+roughCanvas.line(60, 60, 190, 60, {strokeWidth: 5});
 ```
 
 ### rectangle()
