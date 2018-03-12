@@ -2,7 +2,8 @@
 
 This page describes all you can do with RoughJS.
 
-If you're looking for examples, [click here](https://github.com/pshihn/rough/wiki/Examples).
+If you're looking for examples, [click here](https://github.com/pshihn/rough/wiki/Examples).<br>
+If you're looking for how to use RoughJS in a web-worker, [click here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker)
 
 # RoughCanvas
 
