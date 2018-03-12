@@ -115,3 +115,14 @@ roughCanvas.path('M37,17v15H14V17z M50,0H0v50h50z');
 roughCanvas.path('M80 80 A 45 45, 0, 0, 0, 125 125 L 125 80 Z', { fill: 'green' });
 ```
 One of the options you can pass in to the **path** method is _simplification_ which tries to reduce the number of points in the path, thereby simplifying it. This is great for drawing complex paths like maps.  _simplification_ is a number between 0 and 1.
+
+# Options
+
+Describe how a particular shape is drawn. You can pass in options in every method to the RoughCanvas or in the constructor.
+
+Every property is _options_ is optional. The way an option property is resolved is as follows:
+
+For example, the **stroke** property defines the color used to draw the shape. If stroke is defined in the options of a line command, that color will be used. Else it will use the color defined in the constructor. Else it will use the built in default color - black
+
+Following properties can be set in the options:
+
