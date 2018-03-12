@@ -29,24 +29,27 @@ roughCanvas.line(60, 60, 190, 60);
 roughCanvas.line(60, 60, 190, 60, {strokeWidth: 5});
 ```
 
-### rectangle()
-<a name="rectangle" href="#rectangle">#</a>roughCanvas.<b>rectangle</b>(x, y, width, height [, options])
-
+### rectangle (x, y, width, height [, options])
 Draws a rectangle with the top-left corner at (x, y) with the specified width and height.
+```js
+roughCanvas.rectangle(10, 10, 100, 100);
+roughCanvas.rectangle(140, 10, 100, 100, { fill: 'red'});
+```
 
-### ellipse()
-<a name="ellipse" href="#ellipse">#</a>roughCanvas.<b>ellipse</b>(x, y, width, height [, options])
-
+### ellipse (x, y, width, height [, options])
 Draws an ellipse with the center at (x, y) and the specified width and height.
+```js
+roughCanvas.ellipse(350, 50, 150, 80);
+roughCanvas.ellipse(610, 50, 150, 80, {fill: 'blue', stroke: 'red'});
+```
 
-### circle()
-<a name="circle" href="#circle">#</a>roughCanvas.<b>circle</b>(x, y, diameter [, options])
-
+### circle (x, y, diameter [, options])
 Draws a circle with the center at (x, y) and the specified diameter.
+```js
+roughCanvas.circle(480, 50, 80);
+```
 
-### linearPath()
-<a name="linearPath" href="#linearPath">#</a>roughCanvas.<b>linearPath</b>(points [, options])
-
+### linearPath (points [, options])
 Draws a set of lines connecting the specified points. 
 
 <i>points</i> is an array of points. Each point is an array with 2 values - [x, y]
@@ -55,9 +58,7 @@ Draws a set of lines connecting the specified points.
 roughCanvas.linearPath([[690, 10], [790, 20], [750, 120], [690, 100]]);
 ```
 
-### polygon()
-<a name="polygon" href="#polygon">#</a>roughCanvas.<b>polygon</b>(vertices [, options])
-
+### polygon (vertices [, options])
 Draws a polygon with the specified vertices.
 
 <i>vertices</i> is an array of points. Each point is an array with 2 values - [x, y]
