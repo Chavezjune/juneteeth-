@@ -156,3 +156,31 @@ Rough.js supports two styles of filling a shape: hachure and solid. Default valu
 
 **solid** is more like a conventional fill.
 
+![Rough.js rectangle](https://roughjs.com/images/main/m3.png)
+
+```javascript
+canvas.circle(50, 50, 80, { fill: 'red' });
+canvas.rectangle(120, 15, 80, 80, { fill: 'red' });
+canvas.circle(50, 150, 80, {
+  fill: "rgb(10,150,10)",
+  fillWeight: 3 // thicker lines for hachure
+});
+canvas.rectangle(220, 15, 80, 80, {
+  fill: 'red',
+  hachureAngle: 60, // angle of hachure,
+  hachureGap: 8
+});
+canvas.rectangle(120, 105, 80, 80, {
+  fill: 'rgba(255,0,200,0.2)',
+  fillStyle: 'solid' // solid fill
+});
+```
+
+### fillWeight
+Numeric value representing the width of the hachure lines. Default value of the fillWeight is set to half the **strokeWidth** of that shape.
+
+### hachureAngle
+Numerical value (in degrees) that defines the angle of the hachure lines. Default value is -41 degrees.
+
+### hachureGap
+Numerical value that defines the average gap, in pixels, between two hachure lines. Default value of the hachureGap is set to four times the **strokeWidth** of that shape.
