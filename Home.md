@@ -8,8 +8,7 @@ If you're looking for examples, [click here](https://github.com/pshihn/rough/wik
 
 This is the main interface when drawing on Canvas using RoughJS. 
 
-<a name="constructor" href="#constructor">#</a> rough.<b>canvas</b>(<i>canvasElement</i>, [<i>config</i>])
-
+### rough.canvas (canvasElement, [, config])
 Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> method. 
 
 <a href="#config"><i>config</i></a> is optional. 
