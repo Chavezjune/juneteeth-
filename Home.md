@@ -23,8 +23,8 @@ let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 
 For each method, <a href="#options"><i>options</i></a> are optional - they configure how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
-### line
-<i>roughCanvas</i>.<b>line</b>(x1, y1, x2, y2, [options])
+### line()
+<a name="line" href="#line">#</a>roughCanvas.<b>line</b>(x1, y1, x2, y2 [, options])
 
 Draws a line from (x1, y1) to (x2, y2)
 
