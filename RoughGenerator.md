@@ -46,5 +46,7 @@ roughCanvas.draw(shape);
 
 The *drawable* object is serializable. So, you can store these generated shapes as JSON in a file/database.
 ```javascript
+let rect = generator.rectangle(10, 10, 100, 100);
+store(JSON.stringify(rect));
 ```
 
