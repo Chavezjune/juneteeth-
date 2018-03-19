@@ -1,7 +1,5 @@
 ## Basic Examples
 
-| Command | Description | Link |
-| --- | --- | --- |
 | <img width="133" src="http://roughjs.com/images/examples/sampler.png"> | **Sampler** - Simple showcase of most features | [View Live](http://roughjs.com/examples/sampler.html)<br>[View Code](https://github.com/pshihn/rough/blob/master/docs/examples/sampler.html)|
 | <img width="133" src="http://roughjs.com/images/examples/paths.png"> | **Paths** - Using SVG Paths | [View Live](http://roughjs.com/examples/paths.html)<br>[View Code](https://github.com/pshihn/rough/blob/master/docs/examples/paths.html)|
 
