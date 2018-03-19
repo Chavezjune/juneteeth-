@@ -10,4 +10,4 @@
 
 | Preview | Description |
 | --- | --- |
-| <img width="133" src="https://roughjs.com/images/examples/contributed/balloons.png"> | **Balloons** - Animation example by @BrianDGLS (https://github.com/BrianDGLS) ([View Live](https://roughjs.com/examples/contributed/balloon-animation.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/contributed/balloon-animation.html))|
+| <img width="133" src="https://roughjs.com/images/examples/contributed/balloons.png"> | **Balloons** - Animation example by [@BrianDGLS](https://github.com/BrianDGLS) ([View Live](https://roughjs.com/examples/contributed/balloon-animation.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/contributed/balloon-animation.html))|
