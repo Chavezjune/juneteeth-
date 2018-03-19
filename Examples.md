@@ -16,4 +16,6 @@
 
 | Preview | Description |
 | --- | --- |
-| Snake game by [@AriaFallah](https://github.com/AriaFallah) | [View](https://www.aria.ai/snake.html) |
+| Snake game by | [View](https://www.aria.ai/snake.html) |
+| React components for RoughJS | [View](https://github.com/ooade/react-rough) |
+| A rough plugin for [Leaflet](http://leafletjs.com/)  | [View](https://github.com/zhuang-hao-ming/Leaflet.RoughCanvas) |
