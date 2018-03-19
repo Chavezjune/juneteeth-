@@ -5,6 +5,7 @@
 | <img width="133" src="http://roughjs.com/images/examples/paths.png"> | **Paths** - Using SVG Paths ([View Live](http://roughjs.com/examples/paths.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/paths.html))|
 | <img width="133" src="http://roughjs.com/images/examples/bar-chart.png"> | **Bar Chart** - Using D3 ([View Live](http://roughjs.com/examples/bar-chart.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/bar-chart.html))|
 | <img width="133" src="http://roughjs.com/images/examples/us-map.png"> | **US Map** - Using D3 and Web Workers ([View Live](http://roughjs.com/examples/us-map.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/us-map.html))|
+| | **Generators** - Simple example using generators to create shapes and then redrawing them. ([View Live](http://roughjs.com/examples/generator.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/generator.html))
 
 ### Contributed Examples
 
