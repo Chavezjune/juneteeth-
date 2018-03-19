@@ -117,6 +117,20 @@ roughCanvas.path('M80 80 A 45 45, 0, 0, 0, 125 125 L 125 80 Z', { fill: 'green' 
 ```
 One of the options you can pass in to the **path** method is _simplification_ which tries to reduce the number of points in the path, thereby simplifying it. This is great for drawing complex paths like maps.  _simplification_ is a number between 0 and 1.
 
+### draw (drawable)
+Draws the drawable object passed in. 
+[Read more about it here](https://github.com/pshihn/rough/wiki/RoughGenerator).
+
+## Properties
+
+RoughCanvas has only one readonly property - **generator**
+
+### generator
+
+A generator lets you create a *drawable* object for a shape that can be later uses with 
+
+[Read about it here](https://github.com/pshihn/rough/wiki/RoughGenerator)
+
 # Options
 
 Describe how a particular shape is drawn. You can pass in options in every method to the RoughCanvas or in the constructor.
