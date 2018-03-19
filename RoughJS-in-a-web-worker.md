@@ -1,6 +1,6 @@
 If you want to delegate most of RoughJS computation to a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Worker) thread, it is really simple. 
 
-Simply include [Workly](https://github.com/pshihn/workly) (only ~1kb in size) in your page and set the [async](https://github.com/pshihn/rough/wiki#async) property in your config; and RoughJS will automatically move most of the processing to a worker. 
+Simply include [Workly](https://github.com/pshihn/workly) (only 1kB gzipped) in your page and set the [async](https://github.com/pshihn/rough/wiki#async) property in your config; and RoughJS will automatically move most of the processing to a worker. 
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/pshihn/workly/dist/workly.min.js"></script>
