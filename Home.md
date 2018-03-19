@@ -132,6 +132,15 @@ A generator is a *readonly* property that lets you create a *drawable* object fo
 
 [Read about it here](https://github.com/pshihn/rough/wiki/RoughGenerator).
 
+```javascript
+let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
+let generator = roughCanvas.generator;
+let rect1 = generator.rectangle(10, 10, 100, 100);
+let rect2 = generator.rectangle(10, 120, 100, 100, {fill: 'red'});
+roughCanvas.draw(rect1);
+roughCanvas.draw(rect2);
+```
+
 # Options
 
 Describe how a particular shape is drawn. You can pass in options in every method to the RoughCanvas or in the constructor.
