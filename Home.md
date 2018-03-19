@@ -226,6 +226,19 @@ Following is the map of Texas drawn without simplification and then with a simpl
 When <a href="#roughcanvas">instantiating RoughCanvas</a>, you can, optionally, pass in a configuration object. 
 The object can have any of these properties:
 
+### async
+An optional boolean property to create an async version of Canvas/Generator. This is required when running RoughJS in a [worker](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker). 
+
+Default value is **false**.
+
+```javascript
+const rc = rough.canvas(canvas, { async: true });
+(async () => {
+  await rc.rectangle(10, 10, 100, 100);
+  await rc.rectangle(10, 120, 100, 100, {fill: 'red'});
+})();
+```
+
 ### options
 An <a href="#options">options</a> object that sets the default values for all shapes in the RoughCanvas instance.
 
