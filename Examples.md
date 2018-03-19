@@ -1,9 +1,9 @@
 ## Basic Examples
 
-| Preview | Description |
+
 | --- | --- |
 | <img width="133" src="http://roughjs.com/images/examples/sampler.png"> | **Sampler** - Simple showcase of most features ([View Live](http://roughjs.com/examples/sampler.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/sampler.html))|
-| <img width="133" src="http://roughjs.com/images/examples/paths.png"> | **Paths** - Using SVG Paths ([View Live](http://roughjs.com/examples/paths.html)) ([ode](https://github.com/pshihn/rough/blob/master/docs/examples/paths.html))|
+| <img width="133" src="http://roughjs.com/images/examples/paths.png"> | **Paths** - Using SVG Paths ([View Live](http://roughjs.com/examples/paths.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/paths.html))|
 
 
 Here are some examples of using Rough.js
