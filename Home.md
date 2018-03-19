@@ -119,17 +119,18 @@ One of the options you can pass in to the **path** method is _simplification_ wh
 
 ### draw (drawable)
 Draws the drawable object passed in. 
+
 [Read more about it here](https://github.com/pshihn/rough/wiki/RoughGenerator).
 
 ## Properties
 
-RoughCanvas has only one readonly property - **generator**
+RoughCanvas has only one property:
 
 ### generator
 
-A generator lets you create a *drawable* object for a shape that can be later uses with 
+A generator is a *readonly* property that lets you create a *drawable* object for a shape that can be later used with the [draw](https://github.com/pshihn/rough/wiki#draw-drawable) method.
 
-[Read about it here](https://github.com/pshihn/rough/wiki/RoughGenerator)
+[Read about it here](https://github.com/pshihn/rough/wiki/RoughGenerator).
 
 # Options
 
