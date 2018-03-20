@@ -15,7 +15,7 @@
 
 ### Other projects using RoughJS
 
-| Preview | Description |
+| Description | Link |
 | --- | --- |
 | Snake game by | [View](https://www.aria.ai/snake.html) |
 | A rough plugin for [Leaflet](http://leafletjs.com/)  | [View](https://github.com/zhuang-hao-ming/Leaflet.RoughCanvas) |
