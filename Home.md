@@ -115,7 +115,7 @@ Draws a path described using a [SVG path](https://developer.mozilla.org/en-US/do
 roughCanvas.path('M37,17v15H14V17z M50,0H0v50h50z');
 roughCanvas.path('M80 80 A 45 45, 0, 0, 0, 125 125 L 125 80 Z', { fill: 'green' });
 ```
-One of the options you can pass in to the **path** method is _simplification_ which tries to reduce the number of points in the path, thereby simplifying it. This is great for drawing complex paths like maps.  _simplification_ is a number between 0 and 1.
+One of the options you can pass in to the **path** method is _[simplification](https://github.com/pshihn/rough/wiki#simplification)_ which tries to reduce the number of points in the path, thereby simplifying it. This is great for drawing complex paths like maps.  _simplification_ is a number between 0 and 1.
 
 ### draw (drawable)
 Draws the drawable object passed in. 
