@@ -214,9 +214,11 @@ Numerical value that defines the average gap, in pixels, between two hachure lin
 When drawing ellipses, circles, and arcs, RoughJS approximates **curveStepCount** number of points to estimate the shape. Default value is 9. 
 
 ### simplification
-When drawing paths using SVG path instructions, **simplification** can be set to simplify the shape by the specified factor. The value can be between 0 and 1. Default value is 1, i.e. no simplification.
+When drawing paths using SVG path instructions, **simplification** can be set to simplify the shape by the specified factor. The value can be between 0 and 1. 
 
 For example, a path with 100 points and a **simplification** value of 0.5 will estimate the shape to about 50 points. This will give more complex shapes a sketchy feel. 
+
+_A value of 0 (default) is treated as no simplification._
 
 Following is the map of Texas drawn without simplification and then with a simplification of 0.1
 
