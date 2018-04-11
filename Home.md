@@ -5,20 +5,29 @@ This page describes all you can do with RoughJS.
 If you're looking for examples, [click here](https://github.com/pshihn/rough/wiki/Examples).<br>
 If you're looking for how to use RoughJS in a web-worker, [click here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker)
 
-# RoughCanvas
+# RoughCanvas & RoughSVG
 
-This is the main interface when drawing on Canvas using RoughJS. 
+Rough.js renders to Canvas or SVG. RoughCanvas or RoughSVG provides the main interface to work with this library.
 
 Instantiate RoughCanvas by passing in the canvas node to <b>rough.canvas()</b> method. 
-
-<a href="#config"><i>config</i></a> is optional. 
 
 ### rough.canvas (canvasElement, [, config])
 ```javascript
 let roughCanvas = rough.canvas(document.getElementById('myCanvas'));
 ```
 
+Instantiate RoughSVG by passing in the root SVG node to <b>rough.svg()</b> method.
+
+### rough.svg (svgRoot, [, config])
+```javascript
+let roughSvg = rough.svg(document.getElementById('svg'));
+```
+
+<a href="#config"><i>config</i></a> is optional. 
+
 ## Methods
+
+*Both _RoughCanvas_ and _RoughSVG_ provide the same methods.* The difference is that the RoughSVG methods return a node ([g](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g)) that can be inserted in to the SVG DOM.
 
 For each method, <a href="#options"><i>options</i></a> is an optional argument - it configures how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
@@ -27,6 +36,11 @@ Draws a line from (x1, y1) to (x2, y2).
 ```javascript
 roughCanvas.line(60, 60, 190, 60);
 roughCanvas.line(60, 60, 190, 60, {strokeWidth: 5});
+```
+in SVG
+```javascript
+const line = roughSvg.line(60, 60, 190, 60);
+svg.appendChild(line);
 ```
 
 ### rectangle (x, y, width, height [, options])
