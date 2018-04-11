@@ -37,7 +37,7 @@ Draws a line from (x1, y1) to (x2, y2).
 roughCanvas.line(60, 60, 190, 60);
 roughCanvas.line(60, 60, 190, 60, {strokeWidth: 5});
 ```
-in SVG
+in SVG:
 ```javascript
 const line = roughSvg.line(60, 60, 190, 60);
 svg.appendChild(line);
@@ -48,6 +48,12 @@ Draws a rectangle with the top-left corner at (x, y) with the specified width an
 ```javascript
 roughCanvas.rectangle(10, 10, 100, 100);
 roughCanvas.rectangle(140, 10, 100, 100, { fill: 'red'});
+```
+
+in SVG:
+```javascript
+svg.appendChild(roughSvg.rectangle(10, 10, 100, 100));
+svg.appendChild(roughSvg.rectangle(140, 10, 100, 100, { fill: 'red'}));
 ```
 
 ### ellipse (x, y, width, height [, options])
