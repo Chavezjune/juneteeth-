@@ -27,7 +27,7 @@ let roughSvg = rough.svg(document.getElementById('svg'));
 
 ## Methods
 
-*Both _RoughCanvas_ and _RoughSVG_ provide the same methods.* The difference is that the RoughSVG methods return a node ([g](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g)) that can be inserted in to the SVG DOM.
+**Both _RoughCanvas_ and _RoughSVG_ provide the same methods.** The difference is that the RoughSVG methods return a node ([g](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g)) that can be inserted in to the SVG DOM.
 
 For each method, <a href="#options"><i>options</i></a> is an optional argument - it configures how the shape is drawn/filled. Default options can be configured in the <b>rough.canvas</b> instantiator described above. 
 
