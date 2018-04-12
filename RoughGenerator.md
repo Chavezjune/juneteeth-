@@ -58,6 +58,8 @@ let paths = generator.toPaths(rect);
 ```
 *paths* here is an array of PathInfo objects.
 
+**Note:** The paths must be rendered in the same order as they are returned. 
+
 ### PathInfo
 Path info object represents all the information you may need to render a shape to a SVG Path.
 
