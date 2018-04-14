@@ -92,7 +92,7 @@ Draws an arc. An arc is described as a section of en ellipse. <i>x</i>, <i>y</i>
 
 <i>start</i>, <i>stop</i> are the start and stop angles for the arc. 
 
-<closed> is a boolean argument. If true, lines are drawn to connect the two end points of the arc to the center.
+_closed_ is a boolean argument. If true, lines are drawn to connect the two end points of the arc to the center.
 
 ![Rough.js arc](https://roughjs.com/images/main/m7.png)
 
