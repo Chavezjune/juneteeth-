@@ -83,6 +83,7 @@ Note: Only _fill_ or _pattern_ is specified in a PathInfo instance. Never both.
 This object describes the [pattern](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern) to use to fill a path.
 
 Members:
+
 **height:** Height attribute.
 
 **width:** Width attribute.
