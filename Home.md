@@ -144,7 +144,7 @@ Draws the drawable object passed in.
 
 ## Properties
 
-RoughCanvas has only one property:
+RoughCanvas/RoughSVG has only one property:
 
 ### generator
 
