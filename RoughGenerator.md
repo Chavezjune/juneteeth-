@@ -2,6 +2,8 @@ When a shape is drawn using RoughJS, a lot of randomization is used to create th
 
 This is where generators come in. **RoughGenerator** has the same api as [RoughCanvas](https://github.com/pshihn/rough/wiki#roughcanvas) but it does not actually draw the shape - it returns the set of instructions to draw that sketchy shape at a later stage. This object (with instructions) is what we're calling a *drawable*.
 
+Generators are also useful when creating shapes without an actual drawing context; for example, on the server or in a web worker.
+
 ## Instantiating RoughGenerator
 You can get the generator from your RoughCanvas, RoughSVG object, or from the root rough object.
 If your code is running in an environment without HTML Canvas (background worker or on the server), you can use the last option to generate sketchy shapes without actually drawing them on a canvas
