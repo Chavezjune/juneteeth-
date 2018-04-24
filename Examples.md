@@ -24,6 +24,7 @@ Code is available in the [examples folder](https://github.com/pshihn/rough/tree/
 
 | Description | Link |
 | --- | --- |
+| Semiotic - a data visualization framework for React by [Elijah Meeks](https://github.com/emeeks) uses rough.js for sketchy rendering | [View](https://github.com/emeeks/semiotic/releases/tag/v1.9.4) |
 | Snake game by [@AriaFallah](https://github.com/AriaFallah) | [View](https://www.aria.ai/snake.html) |
 | A rough plugin for [Leaflet](http://leafletjs.com/)  | [View](https://github.com/zhuang-hao-ming/Leaflet.RoughCanvas) |
 | React components for RoughJS | [View](https://github.com/ooade/react-rough) |
