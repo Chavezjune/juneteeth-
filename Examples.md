@@ -18,7 +18,7 @@ Code is available in the [examples folder](https://github.com/pshihn/rough/tree/
 | <img width="133" src="https://roughjs.com/images/examples/contributed/donut.png"> | **Basic Charts** - examples by [@bumbeishvili](https://github.com/bumbeishvili) ([View](https://beta.observablehq.com/@bumbeishvili/trying-out-rough)) |
 | <img width="133" src="https://roughjs.com/images/examples/contributed/scratchy.png"> | **Scratchy eyes** - interactive demo ([View](https://beta.observablehq.com/@jashkenas/scratchy-eyes)) |
 | <img width="133" src="https://roughjs.com/images/examples/contributed/tumblewheel.png"> | **Tumble Wheel** - animation example ([View](https://beta.observablehq.com/@jashkenas/tumble-wheel-with-rough-js)) |
-| | Rough with Matter.js by [Isaac](https://github.com/qwertyquerty) ([View Live](https://roughjs.com/examples/contributed/rough-matter.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/contributed/rough-matter.html))| 
+| <img width="133" src="https://roughjs.com/images/examples/contributed/matter.png"> | Rough with Matter.js by [Isaac](https://github.com/qwertyquerty) ([View Live](https://roughjs.com/examples/contributed/rough-matter.html)) ([Code](https://github.com/pshihn/rough/blob/master/docs/examples/contributed/rough-matter.html))| 
 
 
 
