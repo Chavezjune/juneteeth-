@@ -27,9 +27,9 @@ Code is available in the [examples folder](https://github.com/pshihn/rough/tree/
 
 | Description | Link |
 | --- | --- |
+| wired-elements common ui web components with hand-drawn look | [wiredjs.com](https://wiredjs.com/) |
 | Semiotic - a data visualization framework for React by [Elijah Meeks](https://github.com/emeeks) uses rough.js for sketchy rendering | [View](https://github.com/emeeks/semiotic/releases/tag/v1.9.4) |
 | A rough plugin for [Leaflet](http://leafletjs.com/)  | [View](https://github.com/zhuang-hao-ming/Leaflet.RoughCanvas) |
-| wired-elements common ui web components with hand-drawn look | [wiredjs.com](https://wiredjs.com/) |
 | Snake game by [@AriaFallah](https://github.com/AriaFallah) | [View](https://www.aria.ai/snake.html) |
 | React components for RoughJS | [View](https://github.com/ooade/react-rough) |
 | Livegap - Online charts with sketchy rendering | [View](http://livegap.com/charts) |
