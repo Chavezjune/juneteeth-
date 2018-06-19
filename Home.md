@@ -192,16 +192,22 @@ String value representing the color of the drawn objects. Default value is black
 Numerical value to set the width of the strokes (in pixels). Default value is 1.
 
 ### fill
-String value representing the color used to fill a shape. In hachure style fills, this represents the color of the hachure lines.
+String value representing the color used to fill a shape. In _hachure_ style fills, this represents the color of the hachure lines. In _dots_ style, it represents the color of the dots. 
 
 ### fillStyle
-Rough.js supports two styles of filling a shape: hachure and solid. Default value is hachure.
+Rough.js supports the following styles (Default value is hachure):
 
 **hachure** draws sketchy parallel lines with the same roughness as defined by the _roughness_ and the _bowing_ properties of the shape. It can be further configured using the fillWeight, hachureAngle, and hachureGap properties.
 
 **solid** is more like a conventional fill.
 
-![Rough.js rectangle](https://roughjs.com/images/main/m3.png)
+**zigzag** draws zig-zag lines filling the shape
+
+**cross-hatch** Similar to hachure, but draws cross hatch lines (akin to two hachure fills 90 degrees from each other).
+
+**dots** Fills the shape with sketchy dots. 
+
+![Rough.js rectangle](https://roughjs.com/images/main/m13.png)
 
 ```javascript
 canvas.circle(50, 50, 80, { fill: 'red' });
