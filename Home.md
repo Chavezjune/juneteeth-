@@ -230,6 +230,8 @@ canvas.rectangle(120, 105, 80, 80, {
 ### fillWeight
 Numeric value representing the width of the hachure lines. Default value of the fillWeight is set to half the **strokeWidth** of that shape.
 
+When using _dots_ styles to fill the shape, this value represents the diameter of the dot. 
+
 ### hachureAngle
 Numerical value (in degrees) that defines the angle of the hachure lines. Default value is -41 degrees.
 
