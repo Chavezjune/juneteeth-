@@ -211,7 +211,7 @@ Rough.js supports the following styles (Default value is hachure):
 
 **dashed** Similar to hachure but the individual lines are dashed. Dashes can be configured using the *dashOffset* and *dashGap* properties.
 
-**zigzag-lines** Similar to hachure but individual lines are drawn in a zig-zag fashion. The size of the zig-zag can be configured using the *zigzagOffset* proeprty
+**zigzag-line** Similar to hachure but individual lines are drawn in a zig-zag fashion. The size of the zig-zag can be configured using the *zigzagOffset* proeprty
 
 ![Rough.js rectangle](https://roughjs.com/images/main/m14.png)
 
@@ -257,6 +257,15 @@ Following is the map of Texas drawn without simplification and then with a simpl
 ![Rough.js rectangle](https://roughjs.com/images/main/m9.png) ![Rough.js rectangle](https://roughjs.com/images/main/m10.png)
 
 _A value of 0 (default) is treated as no simplification._
+
+### dashOffset
+When filling a shape using the **dashed** style, this property indicates the nominal length of dash (in pixels). If not set, it defaults to the **hachureGap** value.
+
+### dashGap
+When filling a shape using the **dashed** style, this property indicates the nominal gap between dashes (in pixels). If not set, it defaults to the **hachureGap** value.
+
+### zigzagOffset
+When filling a shape using the **zigzag-line** style, this property indicates the nominal width of the zig-zag triangle in each line. If not set, it defaults to the **hachureGap** value.
 
 # Config
 When <a href="#roughcanvas">instantiating RoughCanvas</a>, you can, optionally, pass in a configuration object. 
