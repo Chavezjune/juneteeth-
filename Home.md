@@ -205,9 +205,15 @@ Rough.js supports the following styles (Default value is hachure):
 
 **cross-hatch** Similar to hachure, but draws cross hatch lines (akin to two hachure fills 90 degrees from each other).
 
-**dots** Fills the shape with sketchy dots. 
+**dots** Fills the shape with sketchy dots.
 
-![Rough.js rectangle](https://roughjs.com/images/main/m13.png)
+**sunburst** Draws lines originating from the center of the shape to the edges in all directions.
+
+**dashed** Similar to hachure but the individual lines are dashed. Dashes can be configured using the *dashOffset* and *dashGap* properties.
+
+**zigzag-lines** Similar to hachure but individual lines are drawn in a zig-zag fashion. The size of the zig-zag can be configured using the *zigzagOffset* proeprty
+
+![Rough.js rectangle](https://roughjs.com/images/main/m14.png)
 
 ```javascript
 canvas.circle(50, 50, 80, { fill: 'red' });
