@@ -33,3 +33,4 @@ Code is available in the [examples folder](https://github.com/pshihn/rough/tree/
 | Snake game by [@AriaFallah](https://github.com/AriaFallah) | [View](https://www.aria.ai/snake.html) |
 | React components for RoughJS | [View](https://github.com/ooade/react-rough) |
 | Livegap - Online charts with sketchy rendering | [View](http://livegap.com/charts) |
+| Interactive hand-drawn-like diagrams using [JointJS](https://github.com/clientIO/joint)  | [View](https://resources.jointjs.com/demos/rough) |
