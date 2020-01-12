@@ -2,8 +2,7 @@
 
 This page describes all you can do with RoughJS.
 
-If you're looking for examples, [click here](https://github.com/pshihn/rough/wiki/Examples).<br>
-If you're looking for how to use RoughJS in a web-worker, [click here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker)
+If you're looking for examples, [click here](https://github.com/pshihn/rough/wiki/Examples).
 
 # RoughCanvas & RoughSVG
 
@@ -185,6 +184,9 @@ canvas.rectangle(220, 15, 80, 80, { bowing: 6, stroke: 'green', strokeWidth: 3 }
 ### bowing
 Numerical value indicating how curvy the lines are when drawing a sketch. A value of 0 will cause straight lines. Default value is 1.
 
+### seed
+An optional numeric value that sets the seed for creating random values used in shape generation. This is useful for creating the exact shape when re-generating with the same parameters. The value of seed is between 1 and 2^31. If seed is not defined, or set to `0`, no seed is used when computing random values. 
+
 ### stroke
 String value representing the color of the drawn objects. Default value is black (#000000).
 
@@ -206,8 +208,6 @@ Rough.js supports the following styles (Default value is hachure):
 **cross-hatch** Similar to hachure, but draws cross hatch lines (akin to two hachure fills 90 degrees from each other).
 
 **dots** Fills the shape with sketchy dots.
-
-**sunburst** Draws lines originating from the center of the shape to the edges in all directions.
 
 **dashed** Similar to hachure but the individual lines are dashed. Dashes can be configured using the *dashOffset* and *dashGap* properties.
 
@@ -271,25 +271,5 @@ When filling a shape using the **zigzag-line** style, this property indicates th
 When <a href="#roughcanvas">instantiating RoughCanvas</a>, you can, optionally, pass in a configuration object. 
 The object can have any of these properties:
 
-### async
-An optional boolean property to create an async version of Canvas/Generator. This is required when running RoughJS in a [worker](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker). 
-
-Default value is **false**.
-
-```javascript
-const rc = rough.canvas(canvas, { async: true });
-(async () => {
-  await rc.rectangle(10, 10, 100, 100);
-  await rc.rectangle(10, 120, 100, 100, {fill: 'red'});
-})();
-```
-
 ### options
 An <a href="#options">options</a> object that sets the default values for all shapes in the RoughCanvas instance.
-
-### noWorker
-If <a href="https://github.com/pshihn/workly" target="_blank">workly</a> has been loaded in the window, RoughJS will delegate most of the processing to a worker thread. If **noWorker** is set to *true*, it will not do that. 
-For more about using web workers, [read here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker).
-
-### worklyURL
-When using web workers as described [here](https://github.com/pshihn/rough/wiki/RoughJS-in-a-web-worker), RoughJS will try to load the workly library from the CDN (https://cdn.jsdelivr.net/gh/pshihn/workly/dist/workly.min.js). If you want to provide a different source for workly, set the **worklyURL** property to that url. 
