@@ -188,7 +188,7 @@ Numerical value indicating how curvy the lines are when drawing a sketch. A valu
 An optional numeric value that sets the seed for creating random values used in shape generation. This is useful for creating the exact shape when re-generating with the same parameters. The value of seed is between 1 and 2^31. If seed is not defined, or set to `0`, no seed is used when computing random values. 
 
 ### stroke
-String value representing the color of the drawn objects. Default value is black (#000000).
+String value representing the color of the drawn objects. Default value is black (#000000). If the this is set to `none`, the shape vectors do not contain a stroke (This is different from having a transparent stroke).
 
 ### strokeWidth
 Numerical value to set the width of the strokes (in pixels). Default value is 1.
