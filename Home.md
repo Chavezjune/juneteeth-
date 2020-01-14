@@ -247,6 +247,9 @@ Numerical value that defines the average gap, in pixels, between two hachure lin
 ### curveStepCount
 When drawing ellipses, circles, and arcs, RoughJS approximates **curveStepCount** number of points to estimate the shape. Default value is 9. 
 
+### curveFitting
+When drawing ellipses, circles, and arcs, Let RoughJS know how close should the rendered dimensions be when compared to the specified one. Default value is **0.95** - which means the rendered dimensions will be at least 95% close to the specified dimensions. A value of **1** will ensure that the dimensions are almost 100% accurate.
+
 ### simplification
 When drawing paths using SVG path instructions, **simplification** can be set to simplify the shape by the specified factor. The value can be between 0 and 1. 
 
