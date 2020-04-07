@@ -213,7 +213,7 @@ Rough.js supports the following styles (Default value is hachure):
 
 **zigzag-line** Similar to hachure but individual lines are drawn in a zig-zag fashion. The size of the zig-zag can be configured using the *zigzagOffset* proeprty
 
-![Rough.js rectangle](https://roughjs.com/images/main/m14.png)
+![Rough.js rectangle](https://roughjs.com/images/m14.png)
 
 ```javascript
 canvas.circle(50, 50, 80, { fill: 'red' });
