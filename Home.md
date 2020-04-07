@@ -93,7 +93,7 @@ Draws an arc. An arc is described as a section of en ellipse. <i>x</i>, <i>y</i>
 
 _closed_ is a boolean argument. If true, lines are drawn to connect the two end points of the arc to the center.
 
-![Rough.js arc](https://roughjs.com/images/main/m7.png)
+![Rough.js arc](https://pshihn.github.io/rough/images/main/m7.png)
 
 ```javascript
 roughCanvas.arc(350, 300, 200, 180, Math.PI, Math.PI * 1.6, true);
@@ -112,7 +112,7 @@ Draws a curve passing through the points passed in.
 
 <i>points</i> is an array of points. Each point is an array with 2 values - [x, y]
 
-![Rough.js sine wave](https://roughjs.com/images/main/m8.png)
+![Rough.js sine wave](https://pshihn.github.io/rough/images/main/m8.png)
 
 ```javascript
 // draw sine curve
@@ -173,7 +173,7 @@ Following properties can be set in the options:
 ### roughness
 Numerical value indicating how rough the drawing is. A rectangle with the roughness of 0 would be a perfect rectangle. Default value is 1. There is no upper limit to this value, but a value over 10 is mostly useless.
 
-![Rough.js rectangle](https://roughjs.com/images/main/m4.png)
+![Rough.js rectangle](https://pshihn.github.io/rough/images/main/m4.png)
 
 ```js
 canvas.rectangle(15, 15, 80, 80, { roughness: 0.5, fill: 'red' });
@@ -257,7 +257,7 @@ For example, a path with 100 points and a **simplification** value of 0.5 will e
 
 Following is the map of Texas drawn without simplification and then with a simplification of 0.1
 
-![Rough.js rectangle](https://roughjs.com/images/main/m9.png) ![Rough.js rectangle](https://roughjs.com/images/main/m10.png)
+![Rough.js rectangle](https://pshihn.github.io/rough/images/main/m9.png) ![Rough.js rectangle](https://pshihn.github.io/rough/images/main/m10.png)
 
 _A value of 0 (default) is treated as no simplification._
 
