@@ -12,8 +12,7 @@ Basic showcase on SVG [View on Glitch](https://glitch.com/~rough-basic-svg)
 
 Using Canvas [View on Glitch](https://glitch.com/~rough-paths-canvas)
 
-
-Basic showcase on SVG [View on Glitch](https://glitch.com/~rough-basic-svg)
+Using SVG [View on Glitch](https://glitch.com/~rough-paths-svg)
 
 
 
