@@ -1,6 +1,6 @@
 #### Basic Showcase
 
-<img src="https://pshihn.github.io/rough/images/examples/sampler.png">
+<img width="50%" src="https://pshihn.github.io/rough/images/examples/sampler.png">
 
 Basic showcase on Canvas [View on Glitch](https://glitch.com/~rough-basic-canvas)
 
