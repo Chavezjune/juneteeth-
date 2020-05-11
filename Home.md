@@ -250,6 +250,24 @@ When drawing ellipses, circles, and arcs, RoughJS approximates **curveStepCount*
 ### curveFitting
 When drawing ellipses, circles, and arcs, Let RoughJS know how close should the rendered dimensions be when compared to the specified one. Default value is **0.95** - which means the rendered dimensions will be at least 95% close to the specified dimensions. A value of **1** will ensure that the dimensions are almost 100% accurate.
 
+### strokeLineDash
+If you want the stroke to be dashed (This does not affect the hachure and other fills of the shape), set this property. The value is an array of numbers as described in [setLineDash method of canvas](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash)
+
+### strokeLineDashOffset
+When using dashed strokes, this property sets the line dash offset or *phase*. This is akin to the [lineDashOffset of canvas](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset)
+
+### fillLineDash
+This property is similar to the *strokeLineDash* property but it affects the fills, not the stroke. eg. when you want hachure lines to be dashed.
+
+### fillLineDashOffset
+This property is similar to the *strokeLineDashOffset* property but it affects the fills, not the stroke. 
+
+### disableMultiStroke
+If this property is set to **true**, roughjs does not apply multiple strokes to sketch the shape. 
+
+### disableMultiStrokeFill
+If this property is set to **true**, roughjs does not apply multiple strokes to sketch the hachure lines to fill the shape. 
+
 ### simplification
 When drawing paths using SVG path instructions, **simplification** can be set to simplify the shape by the specified factor. The value can be between 0 and 1. 
 
