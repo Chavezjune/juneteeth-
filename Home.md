@@ -288,6 +288,9 @@ When filling a shape using the **dashed** style, this property indicates the nom
 ### zigzagOffset
 When filling a shape using the **zigzag-line** style, this property indicates the nominal width of the zig-zag triangle in each line. If not set, it defaults to the **hachureGap** value.
 
+### preserveVertices
+When randomizing shapes do not randomize locations of the end points. e.g. end points of line or a curve. Boolean value, defaults to `false`
+
 # Config
 When <a href="#roughcanvas">instantiating RoughCanvas</a>, you can, optionally, pass in a configuration object. 
 The object can have any of these properties:
